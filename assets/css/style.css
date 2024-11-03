@@ -444,13 +444,9 @@ body {
   color: var(--indian-yellow);
   font-size: 70px;
   line-height: 1;
-  text-align: center;
+  justify-items: center;
 }
 
-.card-icon img{
-  text-align: center;
-  justify-content: center;
-}
 
 .service-card .card-title {
   margin-block: 15px 12px;
@@ -525,6 +521,10 @@ body {
   transition: var(--transition-1);
 }
 
+.filter-btn .btn-icon{
+  justify-items: center;
+}
+
 .filter-btn .btn-icon { display: none; }
 
 .filter-btn.active {
@@ -557,6 +557,7 @@ body {
 .pricing-card .card-banner {
   border-radius: 50%;
   overflow: hidden;
+  justify-items: center;
 }
 
 .pricing-card .wrapper { order: 1; }
@@ -571,6 +572,168 @@ body {
   font-family: var(--ff-oswald);
   font-size: var(--fs-30);
   font-weight: var(--fw-500);
+}
+
+
+
+/*-----------------------------------*\
+  #about
+\*-----------------------------------*/
+
+.about{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.about h1{
+  font-size: 50px;
+
+  text-transform: uppercase;
+  
+}
+
+.about article{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.about article h1::after{
+  content: "";
+  height: 3px;
+  width: 225px;
+  margin: auto;
+ 
+ 
+}
+
+.about img{
+  margin-top: 40px;
+  height: 420px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: block;
+
+}
+
+.about content{
+  font-size: 17px;
+  color: white;
+  line-height: 1.5;
+}
+
+.about article h5{
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 30px;
+  
+}
+
+.about article p{
+  font-size: 18px;
+  
+}
+
+/* testimonial styling */
+.testimonials-container {
+  margin: 50px;
+  text-align: center;
+  background-color: hsl(36, 66%, 53%);;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.testimonials-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--eerie-black-1);
+}
+
+.testimonial {
+  display: flex; /* Aligns content in a row */
+  align-items: center; /* Centers items vertically */
+  margin-bottom: 20px;
+  font-style: italic;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.testimonial a {
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.testimonial a:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.testimonial img.client-image {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image round */
+  margin-right: 15px; /* Space between image and text */
+}
+
+.testimonial p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: hsl(0, 0%, 5%);
+}
+
+.testimonial h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color:hsl(0, 0%, 100%);
+  font-weight: bold;
+  
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color:  hsla(0, 0%, 0%, 0.3);
+}
+
+.video-container {
+  width: 30%;
+  max-width: 300px;
+  max-height: 500px;
+}
+
+.video-container video {
+  width: 100%;
+  display: none;
+  height: 430px;
+}
+
+.center-text {
+  width: 30%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container,
+  .center-text {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 
