@@ -45,6 +45,91 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.css">
+    <style>
+ 
+
+/* Media query for screens 575px and below */
+@media (max-width: 575px) {
+    article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article img {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    article .content {
+        text-align: center;
+        font-size: 0.9em;
+        padding: 0 10px;
+    }
+
+    article h5 {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+}
+
+.testimonial {
+    
+   
+}
+
+.testimonial a {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.testimonial img.client-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.testimonial h3 {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Media query for smaller screens (max-width: 575px) */
+@media (max-width: 575px) {
+    .testimonial {
+      display: flex;
+    flex-direction: column;
+        padding: 15px;
+    }
+
+    .testimonial img.client-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial p {
+        font-size: 0.9em;
+    }
+
+    .testimonial h3 {
+        font-size: 1em;
+    }
+}
+
+
+
+
+    </style>
 
 </head>
 
@@ -94,7 +179,7 @@
                   </li>
   
                   <li>
-                    <a href="https://wa.me/+27765668747" target="_blank" aria-label="WhatsApp" class="social-icon">
+                    <a href="https://wa.me/+27716399038" target="_blank" aria-label="WhatsApp" class="social-icon">
                       <ion-icon name="logo-whatsapp"></ion-icon>
                     </a>
                   </li>
@@ -413,7 +498,7 @@
                 </li>
 
                 <li>
-                  <a href="https://wa.me/+27765668747" target="_blank" aria-label="WhatsApp" class="social-icon">
+                  <a href="https://wa.me/+27716399038" target="_blank" aria-label="WhatsApp" class="social-icon">
                     <ion-icon name="logo-whatsapp"></ion-icon>
                   </a>
                 </li>
@@ -455,13 +540,13 @@
             <li class="footer-list-item">
               <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
 
-              <a href="tel:+0123456789" class="contact-link">+012 (345) 67 89</a>
+              <a href="tel:+0123456789" class="contact-link">+27 71 639 9038</a>
             </li>
 
             <li class="footer-list-item">
               <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-              <span class="contact-link">Sun - Friday, 08 am - 09 pm</span>
+              <span class="contact-link">Mon - Sun, 08 am - 08 pm</span>
             </li>
 
             <li class="footer-list-item">
@@ -520,7 +605,7 @@
       const date = document.getElementById("date").value;
       const message = document.getElementById("message").value;
   
-      const whatsappNumber = "+27765668747"; // Replace with the WhatsApp number you want to send to
+      const whatsappNumber = "+27716399038"; // Replace with the WhatsApp number you want to send to
   
       const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=
         Hello,%20I%20would%20like%20to%20book%20an%20appointment.%0A
